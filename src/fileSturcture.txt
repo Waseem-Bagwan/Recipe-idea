@@ -1,0 +1,14 @@
+recipe-ideas/
+├── src/
+│   ├── pages/
+│   │   ├── HomePage.jsx
+│   │   └── RecipeDetailsPage.jsx
+│   ├── components/
+│   │   ├── SearchBar.jsx
+│   │   ├── MealCard.jsx
+│   │   └── FavoritesGrid.jsx
+│   ├── context/
+│   │   └── RecipeContext.jsx
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
