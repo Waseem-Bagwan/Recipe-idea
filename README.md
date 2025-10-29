@@ -1,45 +1,44 @@
+🍳 Recipe Ideas — README.md
 🧩 Project Overview
 
-Book Finder is a modern React web application that allows users to search for books, view detailed information, and create a personalized collection.
-It was built for Alex, a college student who wants an easy way to discover and save books using the Open Library API.
+Recipe Ideas is a visually rich and responsive web app built for Taylor, a busy professional who wants to cook based on available ingredients.
+It uses TheMealDB API to fetch meals dynamically — just type the ingredients you have, and the app instantly shows you recipes that match.
+
+The goal was to create a simple but modern recipe discovery experience with features like favorites, ingredient search, and detailed meal popups.
 
 👩‍💻 User Need
-
-“I often need to quickly look up books for college projects or personal reading. I want something simple, clean, and fast.”
+“After work, I often have random ingredients and limited time. I want a tool that helps me find easy recipes using what I already have.”
 
 🎨 Features
 
-🔍 Search books by title using Open Library API
-📖 View detailed book info (cover, author, year, subjects)
-💾 Add or remove books from personal collection (stored in localStorage)
-🧭 Responsive UI with TailwindCSS styling
-💡 Handles loading states and missing data gracefully
+🧂 Search meals by ingredient using TheMealDB API
+🍲 Display responsive grid of meals with images, names, and quick access
+🔍 View detailed recipe instructions and ingredients
+❤️ Save favorite meals to localStorage (persistent between sessions)
+⚙️ Handles no results, loading states, and image placeholders
+💨 Lazy-loaded and optimized for fast performance
 
 🧠 How I Used AI (ChatGPT)
 
-Recruiters asked how I leverage AI — here’s my genuine workflow:
-Idea Structuring: I asked ChatGPT to help break down the problem from user persona → feature list → data flow.
-UI Guidance: ChatGPT helped me design a clean layout (Home, Book Details, Collection) and guided on component separation.
-API Debugging: When the Open Library JSON responses were inconsistent, ChatGPT explained key formats and edge-case handling.
-Code Review: I refined my useEffect logic and context state management after AI suggestions for cleaner patterns.
-Styling Polish: ChatGPT helped modernize my Tailwind design to match a real-world book discovery app look.
-I used AI as a collaborator, not a crutch — generating design direction, architecture clarity, and speed. 
+Here’s how I used AI intelligently and professionally throughout development:
+Requirement Interpretation: ChatGPT helped me translate the user persona into actionable UI components — search bar, grid layout, and recipe detail modal.
+API Exploration: It helped me understand how TheMealDB’s endpoints work (filter.php?i={ingredient} and lookup.php?i={id}) and structure my fetch logic.
+UI Guidance: I collaborated with ChatGPT to make the UI feel real — improving grid spacing, image transitions, and hover effects for modern appeal.
+Performance Fixes: When image loading slowed the app, ChatGPT suggested lazy loading and blur-up placeholders, which dramatically improved UX.
+Code Architecture: I discussed state management and routing patterns with AI to keep the code clean and reusable across pages.
+This collaboration shows problem-solving maturity — using AI to learn, debug, and enhance design — not just to “generate code.”
 
 🛠️ Tech Stack
 
 Framework: React (Vite)
-
 Styling: Tailwind CSS
-
-State Management: React Context
-
-API: Open Library API
-
+API: TheMealDB API
+State Management: React Context / Hooks
 Persistence: localStorage
 
 ⚙️ Installation & Setup
-git clone https://github.com/yourusername/book-finder.git
-cd book-finder
+git clone https://github.com/yourusername/recipe-ideas.git
+cd recipe-ideas
 npm install
 npm run dev
 
@@ -48,4 +47,69 @@ Then open http://localhost:5173 in your browser.
 
 🚀 Deployment
 
-Deployed on Vercel (or Netlify) — [Live Demo](https://book-finder-neon-xi.vercel.app/)
+Deployed on Netlify — 🍳 Recipe Ideas — README.md
+🧩 Project Overview
+
+Recipe Ideas is a visually rich and responsive web app built for Taylor, a busy professional who wants to cook based on available ingredients.
+It uses TheMealDB API to fetch meals dynamically — just type the ingredients you have, and the app instantly shows you recipes that match.
+
+The goal was to create a simple but modern recipe discovery experience with features like favorites, ingredient search, and detailed meal popups.
+
+👩‍💻 User Need
+
+“After work, I often have random ingredients and limited time. I want a tool that helps me find easy recipes using what I already have.”
+
+🎨 Features
+
+🧂 Search meals by ingredient using TheMealDB API
+
+🍲 Display responsive grid of meals with images, names, and quick access
+
+🔍 View detailed recipe instructions and ingredients
+
+❤️ Save favorite meals to localStorage (persistent between sessions)
+
+⚙️ Handles no results, loading states, and image placeholders
+
+💨 Lazy-loaded and optimized for fast performance
+
+🧠 How I Used AI (ChatGPT)
+
+Here’s how I used AI intelligently and professionally throughout development:
+
+Requirement Interpretation: ChatGPT helped me translate the user persona into actionable UI components — search bar, grid layout, and recipe detail modal.
+
+API Exploration: It helped me understand how TheMealDB’s endpoints work (filter.php?i={ingredient} and lookup.php?i={id}) and structure my fetch logic.
+
+UI Guidance: I collaborated with ChatGPT to make the UI feel real — improving grid spacing, image transitions, and hover effects for modern appeal.
+
+Performance Fixes: When image loading slowed the app, ChatGPT suggested lazy loading and blur-up placeholders, which dramatically improved UX.
+
+Code Architecture: I discussed state management and routing patterns with AI to keep the code clean and reusable across pages.
+
+This collaboration shows problem-solving maturity — using AI to learn, debug, and enhance design — not just to “generate code.”
+
+🛠️ Tech Stack
+
+Framework: React (Vite)
+
+Styling: Tailwind CSS
+
+API: TheMealDB API
+
+State Management: React Context / Hooks
+
+Persistence: localStorage
+
+⚙️ Installation & Setup
+git clone https://github.com/yourusername/recipe-ideas.git
+cd recipe-ideas
+npm install
+npm run dev
+
+
+Then open http://localhost:5173 in your browser.
+
+🚀 Deployment
+
+Deployed on Netlify — [Live Demo](https://recipe-idea-silk.vercel.app/)
